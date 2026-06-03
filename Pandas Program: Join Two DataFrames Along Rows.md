@@ -17,9 +17,23 @@ To write a Python program using Pandas to **join two DataFrames along rows** (ro
 ---
 
 ## 💻 Program
-
-Add code here
+```
+import pandas as pd
+x=eval(input())
+y=eval(input())
+a1=pd.DataFrame(x)
+a2=pd.DataFrame(y)
+print("Original DataFrames:")
+print(a1)
+print("-------------------------------------")
+print(a2,'\n')
+result=pd.concat([a1,a2],axis=1)
+print("Join the said two dataframes along columns:")
+print(result)
+```
 
 ## Output
+<img width="750" height="432" alt="image" src="https://github.com/user-attachments/assets/1d2714b9-9bf4-4a1e-8415-23c5a5ef76e0" />
 
 ## Result
+Thus the program was successfully executed.
